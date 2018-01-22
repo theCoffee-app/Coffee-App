@@ -1,0 +1,79 @@
+<! DOCTYPE html>
+
+<html>
+	<head>
+	
+	<script type="text/javascript">
+	
+			/*var random = function(){
+				return Math.round(Math.random()*2);
+			}
+			
+			function randomCoffee() {
+			//var random = Math.round(Math.random()*2)
+			var coffee = new Array();
+				coffee[0] = "Espresso";
+				coffee[1] = "Ristretto";
+				coffee[2] = "Latte";
+				document.getElementById("text").innerHTML = coffee[random()];
+				}
+				
+			function randomImage() {
+				var img = new Array();
+				img[0] = "coffeelogo.png";
+				img[1] = "cmumav.jpg";
+				img[2] = "coffeelogo.png";
+				//var random = Math.round(Math.random() * img.length);
+				document.getElementById("image").innerHTML = "<img src='" + img[random()] + "'></img>"
+			} */
+			
+			function random(){
+				var rndm = Math.round(Math.random()*3)
+				var coffee = new Array();
+				coffee[0] = "Espresso";
+				coffee[1] = "Ristretto";
+				coffee[2] = "Latte";
+				coffee[3] = "Cappuccino";
+				document.getElementById("text").innerHTML = coffee[rndm];
+				
+				var img = new Array();
+				img[0] = "espresso1.png";
+				img[1] = "espresso1.png";
+				img[2] = "latte.png";
+				img[3] = "cappu.png";
+				document.getElementById("image").innerHTML = "<img src='" + img[rndm] + "'></img>"
+				
+			}
+			
+				</script>
+				
+				<style>
+					img{width:20%;height:30%;}
+					#text{font-size: 350%;}
+					button{width: 15%;}
+				</style>
+				
+	</head>		
+		<body>			
+		
+		<div style="text-align: center">
+			<p id="text"></p>
+			<p id="image"></p>
+			<button onclick="random()">Coffee</button>
+			
+		</div>
+		
+
+		
+
+		<!--<img src = "coffeelogo.png">
+					<img src="random.png" height="75%"
+						 style="margin-left:20%;"/>
+				</a>-->
+				
+
+
+
+		</body>
+</html>
+

@@ -1,0 +1,37 @@
+	.card {
+            text-align: center;
+    		background: firebrick;
+            color: white;
+          }
+     body {
+         background: #b93838;
+           /*overflow-y: hidden;*/
+          }
+      .navbar {
+          background-color: firebrick;
+          min-height: 50px;
+    } 
+      #banner {
+            text-align: center;
+            color: black;
+            font-size: 22px;      
+            text-decoration: none;
+            display: block;
+            margin: auto;
+            width: 50%;
+      }
+      #srch {
+            float: right;
+            width: 30px;
+            height: 30px;
+            
+      }
+      #title {padding: 0;}
+      #coffee-img {width: 75%; }
+      #info-card {font-size: large;}
+      /*#info-card {display: none; font-size: large;}*/
+      /*.btn {background-color: firebrick;}*/      
+    .glyphicon {width: 55px; text-align: center; font-size: 30px; color: black;}
+      
+
+.opacity {-webkit-filter: opacity(50%);filter: opacity(50%);}

@@ -1,0 +1,194 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+    <head>
+		<!--
+		 * Copyright (c) 2013, Intel Corporation. All rights reserved.
+		 * Please see the included README.md file for license terms and conditions.
+		-->
+        <script>
+            (function() {
+                if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) 
+                {
+                    var msViewportStyle = document.createElement("style");
+                    msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+                    document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+                    
+                }   
+            })();
+        </script>
+        <title>Responsive Button</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <script src='cordova.js'></script> 
+        <script src="js/main.js" type="text/javascript"></script>
+        
+    <script>  
+        //$.feat.nativeTouchScroll=true;
+        /*$(document).ready(function(){
+          
+          $(".myScroll").scroller({
+             verticalScroll:true,
+             horizontalScroll:false,
+             autoEnable:true});
+          });
+        */
+        </script>   
+        
+    <style>
+        /*Drop Box*/
+            .dropbtn {
+                        background-color: crimson;
+                        color: white;
+                        padding: 10%;
+                        font-size: 100%;
+                        border: none;
+                        cursor: pointer;
+                        width: 100%;
+                        
+        }
+
+       
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                width: 90%;
+                left: 5%;
+                padding-top: 5%;
+            }
+
+        
+            .dropdown-content {
+                display: none;
+                position: relative;
+                background-color: lightcoral;
+                /*min-width: 160px;*/
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                width: 100%;
+                overflow:auto;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+
+            /*.dropdown-content a:hover {background-color: #f1f1f1}*/
+
+           /* .dropdown:hover,:focus,:active .dropdown-content {
+                display: block;
+            }*/
+        .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+                background-color: lightcoral;
+}
+        /*End Drop Box*/    
+            
+            h2{padding: 5px;}
+            h3{padding: 1px;}
+            /*.myScroll {
+                overflow-y: scroll !important;
+                max-height: 100vh !important;
+                background-color: lightcoral;
+            
+            }*/
+            .masthead {background-color: #b01030;}
+            div {background-color: #b01030;}
+            /*div {-webkit-overflow-scrolling: touch;
+                    }*/
+            body {background-color: #b01030;
+            /*overflow-y: scroll !important;
+                max-height: 100vh !important;*/
+        overflow: scroll;}
+          
+        </style>
+        
+        
+    </head>
+    
+    <body>
+       
+        <div class="masthead">
+            <img class="logo"/>
+            <h3><a href="index.html">
+            <img src="home.png" 
+                     
+            style="width:10%;height:90%;padding-left:5px; padding-bottom:5px;">
+                </a></h3>
+            
+         </div>
+        
+        
+        <div class="dropdown">
+            <button class="dropbtn">Classics</button>
+            <div class="dropdown-content">
+                <a href="espresso.html">Espresso</a>
+                <a href="espresso1.html">Risretto</a>
+                <a href="espressoBlnd.html">Blonde Espresso</a>
+                <a href="espmacc.html">Espresso Macchiato</a> 
+                <a href="americano.html">Americano</a>   
+                 <a href="latte.html">Latte</a>
+                 <a href="cappu.html">Cappuccino</a>
+                 <a href="flatwhite.html">Flat White</a>
+                 <a href="mocha.html">Caffe Mocha</a> 
+                 <a href="cortado.html">Cortado</a>
+                 <a href="cafeaulait.html">Cafe au Lait</a>
+                <a href="Ristretto.html">Test</a>
+                 
+            </div> 
+        </div>
+        <div class="dropdown">
+        <button class="dropbtn">Cuban Coffee</button>    
+            <div class="dropdown-content">
+                  
+                <a href="cubano.html">Café Cubano</a>
+                <a href="cortadito.html">Cortadito</a>
+                <a href="cafeleche.html">Café con Leche</a>
+            </div>
+        </div>
+        
+         <div class="dropdown">
+        <button class="dropbtn">Brew Methods</button>
+            <div class="dropdown-content">
+                                  
+                <a href="french.html">French Press</a>
+                <a href="chemex.html">Chemex</a>
+                <a href="moka.html">Moka Pot</a>
+                <a href="aeropress.html">AeroPress</a>
+            </div>
+        </div>
+        <!--<div class="myScroll">
+         <div id=text>
+                <ul style="list-style-type:disc">
+                <h3><u>Classics</u></h3><br><hr>    
+                <h2><li><a href="espresso.html">Espresso</a></li></h2><br>
+                 <h2><li><a href="espresso1.html">Risretto</a></li></h2><br>
+                 <h2><li><a href="americano.html">Americano</a></li></h2><br>    
+                 <h2><li><a href="latte.html">Latte</a></li></h2><br>
+                 <h2><li><a href="cappu.html">Cappuccino</a></li></h2><br>
+                 <h2><li><a href="flatwhite.html">Flat White</a></li></h2><br>
+                 <h2><li><a href="mocha.html">Caffe Mocha</a></li></h2><br> 
+                <h2><li><a href="cortado.html">Cortado</a></li></h2><br>
+                    <hr>
+                <h3><u>Cuban Coffee</u></h3> <br>    
+                <h2><li><a href="cubano.html">Café Cubano</a></li></h2><br>
+                <h2><li><a href="cortadito.html">Cortadito</a></li></h2><br>
+                <h2><li><a href="cafeleche.html">Café con Leche</a></li></h2><br>
+                    <hr>
+                <h3><u>Brew Methods</u></h3> <br>   
+                <h2><li><a href="french.html">French Press</a></li></h2><br>     
+                 </ul>
+             
+            
+                    </div>
+
+        </div>-->
+    </body>
+</html>

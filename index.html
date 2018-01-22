@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Search Page</title>
+  <meta charset="utf-8">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <!--Nav Links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/main2.css">
+    
+  <style>
+	.card {text-align: center;
+    		background: black;
+            color: white;
+      }
+     body {background: #88CC80;
+           /*overflow-y: hidden;*/
+     }
+      .navbar {background-color: #56B74A;}      
+      #title {padding: 0;}
+      #coffee-img {width: 75%; }
+      #info-card {display: none; font-size: large;}
+      /*.btn {background-color: firebrick;}*/
+      .glyphicon {width: 50px; text-align: center; font-size: 20px;}
+      #list {}
+      
+       #text1, #text2 {
+              z-index: 100;
+              position: absolute;
+              color: white;
+              font-size: 40px;
+              font-weight: bold;
+              left: 32%;
+              top: 27%;
+              text-align: center;
+            }
+        #text3 {
+              z-index: 100;
+              position: absolute;
+              color: white;
+              font-size: 40px;
+              font-weight: bold;
+              left: 8%;
+              top: 30%;
+              text-align: center;
+            }
+      #text4 {
+              z-index: 100;
+              position: absolute;
+              color: white;
+              font-size: 40px;
+              font-weight: bold;
+              left: 12%;
+              top: 31%;
+              text-align: center;
+            }
+     
+  </style>
+
+    <link href="coffeelogo.png" rel="apple-touch-icon" />
+    <link href="coffeelogo.png" rel="icon" sizes="160x160" />
+
+</head>
+
+<body> 
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+                <a id="banner" href="index.html"><b>Coffee App</b></a>
+                <img id="srch" src="search.png" onclick="location.href='ListTest2.html'"/>          
+        </div>
+    </nav>
+
+<div class="container-fluid" style="margin-top: 75px; margin-bottom:75px;">
+  
+  
+    <div class="card"><a id="text1" href="ListTest2.html"> Search</a><img class="opacity" src="espCard.png" height="200px">
+  <!--<div class="card-body"><input type="image" src="espCard.png" class="img-rounded" id="coffee-img" width="100%" padding="0"onclick="window.location.href='latte.html'"/></div>-->
+  </div><br/>
+    
+       <div class="card"><a id="text1" onclick="randomcoffee()"> Coffee</a><img class="opacity" src="ranCard.png" height="200px"  onclick="randomcoffee()">
+  </div><br/>
+    
+           <div class="card"><a id="text3" href="Map.html"> Coffee Near You</a><img class="opacity" src="mapCard.png" height="200px"  onclick="randomcoffee()">
+  </div><br/>
+    
+    <div class="card"><a id="text4" href="BrewList2.html"> Brew Methods</a><img class="opacity" src="brewCard.png" height="200px"  onclick="randomcoffee()">
+  </div><br/>
+ 
+   <!-- <br/>
+    <button type="button" id="randBtn" class="btn btn-primary btn-block" onclick="randomcoffee()"><h3>Random</h3></button>  -->
+
+</div>
+</body>
+</html>
