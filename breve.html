@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Breve</title>
+  <meta charset="utf-8">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <!--Nav Links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/main2.css">        
+    
+  <style>
+	.card {
+            text-align: center;
+    		background: #9f8584;
+            color: white;
+          }
+     body {
+         background: #603533;
+           /*overflow-y: hidden;*/
+          }
+      .navbar {background-color: #9f8584;} 
+      #banner {
+            text-align: center;
+            color: black;
+            font-size: 22px;      
+            text-decoration: none;
+            display: block;
+            margin: auto;
+            width: 50%;
+      }
+      #srch {
+            float: right;
+            width: 30px;
+            height: 30px;
+            
+      }
+      #title {padding: 0;}
+      #coffee-img {width: 75%; }
+      #info-card {font-size: large;}
+    
+      
+      
+      
+      
+     
+  </style>
+
+    <link href="coffeelogo.png" rel="apple-touch-icon" />
+    <link href="coffeelogo.png" rel="icon" sizes="160x160" />
+
+</head>
+
+<body> 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+           
+                <a id="banner" href="index.html"><b>Coffee App</b></a>
+                <img id="srch" src="search.png" onclick="location.href='ListTest2.html'"/>           
+        </div>
+    </nav>
+
+   
+    
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container-fluid">                
+            <ul class="nav nav-pills">
+                <li> <a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li ><a href="#"><span class="glyphicon glyphicon-random" onclick="randomcoffee()"></span></a></li>
+                <li><a href="Map2.html"><span class="glyphicon glyphicon-globe"></span></a></li>                
+            </ul>
+        </div>
+    </nav>
+
+<div class="container-fluid" style="margin-top: 75px; margin-bottom:75px;">
+
+  <div class="card">
+    <div class="card-body" id="title"><h2>Breve</h2></div>
+  </div>
+  
+  <br/>
+  
+  <div class="card" id="info-card">
+  <div class="card-body">One part espresso, two parts steamed half-and-half, and topped with foam.</div>
+  </div>
+
+  <br/>
+  
+    
+  <div class="card">  
+      <div class="card-body"><input type="image" src="latte.png" class="img-rounded" id="coffee-img" onclick="showDesc()" /></div>
+  </div>
+  
+    <br/>
+    
+
+</div>
+</body>
+</html>

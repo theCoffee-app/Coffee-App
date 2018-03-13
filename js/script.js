@@ -25,6 +25,10 @@ function randomcoffee() {
     coffee[15] = "espmacc.html";
     coffee[16] = "aeropress.html";
     coffee[17] = "espressoBlnd.html";
+    coffee[18] = "latteMacc.html";
+    coffee[19] = "breve.html";
+    coffee[20] = "coldbrew.html";
+    coffee[21] = "coldbrewNitro.html";
     
     //changes the current window to the random number generated
     window.location = coffee[myrandom];
