@@ -62,6 +62,31 @@
               top: 31%;
               text-align: center;
             }
+      .card {
+          max-width: 60rem;         
+      }
+      #cardText {
+          z-index: 1;
+          text-align: center;
+          width: 100%;
+          position: absolute;
+          margin: 25% 0;
+          font-size: 40px;
+          font-weight: bold;
+          color: white;
+      }
+      a {
+          text-decoration: none;
+      }
+ .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
+}
+      img {
+           height: 250px;
+      }
      
   </style>
 
@@ -81,8 +106,37 @@
 <div class="container-fluid" style="margin-top: 75px; margin-bottom:75px;">
   
   
-    <div class="card"><a id="text1" href="ListTest2.html"> Search</a><img class="opacity" src="espCard.png" height="200px">
-  <!--<div class="card-body"><input type="image" src="espCard.png" class="img-rounded" id="coffee-img" width="100%" padding="0"onclick="window.location.href='latte.html'"/></div>-->
+   <div class="card center rounded">
+       <a href="ListTest2.html">
+        <p class="card-text" id="cardText">Search</p>   
+        <img src="espCard.png" class="card-img opacity">
+        </a>
+    </div>
+    <br/>
+ <div class="card center rounded">
+       <a onclick="randomcoffee()">
+        <p class="card-text" id="cardText">Coffee</p>   
+        <img src="ranCard.png" class="card-img opacity">
+        </a>
+    </div>
+    <br/>
+ <div class="card center rounded">
+       <a href="Map.html">
+        <p class="card-text" id="cardText">Coffee Near You</p>   
+        <img src="mapCard.png" class="card-img opacity">
+        </a>
+    </div>
+    <br/>
+ <div class="card center rounded">
+       <a href="BrewList2.html">
+        <p class="card-text" id="cardText">Brew Methods</p>   
+        <img src="brewCard.png" class="card-img opacity">
+        </a>
+    </div>
+    <br/>
+    
+    <!--Old Design
+    <div class="card"><a id="text1" href="ListTest2.html"> Search</a><img class="opacity" src="espCard.png" height="200px"> 
   </div><br/>
     
        <div class="card"><a id="text1" onclick="randomcoffee()"> Coffee</a><img class="opacity" src="ranCard.png" height="200px"  onclick="randomcoffee()">
@@ -92,7 +146,7 @@
   </div><br/>
     
     <div class="card"><a id="text4" href="BrewList2.html"> Brew Methods</a><img class="opacity" src="brewCard.png" height="200px"  onclick="randomcoffee()">
-  </div><br/>
+  </div><br/>-->
  
    <!-- <br/>
     <button type="button" id="randBtn" class="btn btn-primary btn-block" onclick="randomcoffee()"><h3>Random</h3></button>  -->
