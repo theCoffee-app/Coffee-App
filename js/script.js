@@ -4,7 +4,7 @@ var coffee;*/
 
 function randomcoffee() {
     "use strict"; //Don't know why
-   var myrandom = Math.round(Math.random() * 16);
+   var myrandom = Math.round(Math.random() * 22);
     //creates a random whole number in between 0-11
    var coffee = [];
     coffee[0] = "espresso.html";
@@ -29,6 +29,7 @@ function randomcoffee() {
     coffee[19] = "breve.html";
     coffee[20] = "coldbrew.html";
     coffee[21] = "coldbrewNitro.html";
+    coffee[22] = "chorreador.html";
     
     //changes the current window to the random number generated
     window.location = coffee[myrandom];
